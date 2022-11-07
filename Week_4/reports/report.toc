@@ -1,0 +1,26 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Giới thiệu bài toán.}{2}{section.1}%
+\contentsline {section}{\numberline {2}Các giải thuật tìm kiếm.}{2}{section.2}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {3}Giải bài toán.}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Trả lời câu hỏi 1a.}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Trả lời câu hỏi 1b.}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Trả lời câu hỏi 1c.}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Hiệu chỉnh thuật toán.}{8}{subsection.3.4}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {4}Cài đặt chương trình.}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Ghi chú.}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Định dạng file đầu vào.}{10}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Nhận xét.}{11}{section.5}%

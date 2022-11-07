@@ -1,0 +1,22 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Bài toán}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Mô tả bài toán}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Phân tích không gian trạng thái.}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Tìm hiểu thuật toán.}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Thuật toán Breadth First Search - BFS.}{3}{subsection.2.1}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {subsection}{\numberline {2.2}Thuật toán Depth First Search - DFS.}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}So sánh ban đầu về hai thuật toán.}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Cài đặt bằng \lstinline |Python|}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Các thư viện hỗ trợ}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Các file}{5}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}File \lstinline |generate_full_space_tree.py|}{5}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}File \lstinline |solve.py|}{6}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}File \lstinline |main.py|}{7}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {4}Kết quả}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Khởi tạo cây không gian trạng thái}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Giải bài toán với DFS}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Giải bài toán với BFS}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Nhận xét}{13}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Tham khảo}{13}{section.5}%

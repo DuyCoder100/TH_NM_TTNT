@@ -1,0 +1,17 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Bài toán tìm đường đi ngắn nhất}{2}{section.1}%
+\contentsline {section}{\numberline {2}Giải thuật Heuristic}{3}{section.2}%
+\contentsline {section}{\numberline {3}Best First Search}{3}{section.3}%
+\contentsline {section}{\numberline {4}Thuật toán Greedy Best First Search (GBFS)}{4}{section.4}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {5}Thuật toán A-star (A*)}{5}{section.5}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {6}Cài đặt bằng \lstinline |Python| }{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Cấu trúc file đầu vào}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Các hàm}{9}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Hàm \lstinline |main|}{10}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Kết quả}{11}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Nhận xét}{12}{section.7}%
+\contentsline {section}{\numberline {8}Tham khảo}{12}{section.8}%
