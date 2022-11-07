@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.10.8)  6 NOV 2022 15:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.10.8)  7 NOV 2022 13:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1037,14 +1037,18 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (report.toc)
+) (report.toc
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 27.
+ (C:\Program Files\MiKTeX\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+))
 \tf@toc=\write6
 \openout6 = `report.toc'.
 
  [1
 
 {C:/Users/duyng/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<images//problem.png, id=72, 710.655pt x 365.86688pt>
+<images//problem.png, id=103, 710.655pt x 365.86688pt>
 File: images//problem.png Graphic file (type png)
 <use images//problem.png>
 Package pdftex.def Info: images//problem.png  used on input line 77.
@@ -1067,10 +1071,6 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htbp') on input line 160.
 
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 164.
-(C:\Program Files\MiKTeX\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `htbp') on input line 191.
@@ -1078,7 +1078,7 @@ LaTeX Warning: No positions in optional float specifier.
 [2
 
  <./images//problem.png>] [3] [4] [5]
-<images//proof.png, id=108, 794.97pt x 334.24875pt>
+<images//proof.png, id=138, 794.97pt x 334.24875pt>
 File: images//proof.png Graphic file (type png)
 <use images//proof.png>
 Package pdftex.def Info: images//proof.png  used on input line 258.
@@ -1086,10 +1086,10 @@ Package pdftex.def Info: images//proof.png  used on input line 258.
  [6
 
  <./images//proof.png>]
-<images//can_see.png, id=118, 681.29532pt x 317.68687pt>
+<images//can_see.png, id=149, 681.29532pt x 317.68687pt>
 File: images//can_see.png Graphic file (type png)
 <use images//can_see.png>
-Package pdftex.def Info: images//can_see.png  used on input line 302.
+Package pdftex.def Info: images//can_see.png  used on input line 304.
 (pdftex.def)             Requested size: 362.7689pt x 169.15852pt.
 
 
@@ -1097,45 +1097,87 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 309.
+               Default added (so using `htbp') on input line 311.
 
 [7]
-<images//not_correct_path.png, id=125, 462.528pt x 346.896pt>
+<images//not_correct_path.png, id=157, 462.528pt x 346.896pt>
 File: images//not_correct_path.png Graphic file (type png)
 <use images//not_correct_path.png>
-Package pdftex.def Info: images//not_correct_path.png  used on input line 338.
+Package pdftex.def Info: images//not_correct_path.png  used on input line 340.
 (pdftex.def)             Requested size: 386.97525pt x 290.23143pt.
  [8 <./images//can_see.png> <./images//not_correct_path.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `htbp') on input line 345.
+               Default added (so using `htbp') on input line 347.
 
 [9]
-<images//input.png, id=140, 344.03531pt x 184.43906pt>
+<images//input.png, id=172, 344.03531pt x 184.43906pt>
 File: images//input.png Graphic file (type png)
 <use images//input.png>
-Package pdftex.def Info: images//input.png  used on input line 384.
+Package pdftex.def Info: images//input.png  used on input line 386.
 (pdftex.def)             Requested size: 362.77536pt x 194.48567pt.
- [10
+LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 391.
 
- <./images//input.png>] [11
 
-] (report.aux)
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lstinline' on input line 391.
+
+[10
+
+ <./images//input.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lstinline' on input line 401.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lstinline' on input line 408.
+
+[11] [12]
+<images//dfs.png, id=189, 462.528pt x 346.896pt>
+File: images//dfs.png Graphic file (type png)
+<use images//dfs.png>
+Package pdftex.def Info: images//dfs.png  used on input line 449.
+(pdftex.def)             Requested size: 145.1113pt x 108.83348pt.
+<images//bfs.png, id=190, 462.528pt x 346.896pt>
+File: images//bfs.png Graphic file (type png)
+<use images//bfs.png>
+Package pdftex.def Info: images//bfs.png  used on input line 455.
+(pdftex.def)             Requested size: 145.1113pt x 108.83348pt.
+<images//ucs.png, id=191, 462.528pt x 346.896pt>
+File: images//ucs.png Graphic file (type png)
+<use images//ucs.png>
+Package pdftex.def Info: images//ucs.png  used on input line 461.
+(pdftex.def)             Requested size: 145.1113pt x 108.83348pt.
+<images//gbfs.png, id=192, 462.528pt x 346.896pt>
+File: images//gbfs.png Graphic file (type png)
+<use images//gbfs.png>
+Package pdftex.def Info: images//gbfs.png  used on input line 468.
+(pdftex.def)             Requested size: 145.1113pt x 108.83348pt.
+<images//a_star.png, id=193, 462.528pt x 346.896pt>
+File: images//a_star.png Graphic file (type png)
+<use images//a_star.png>
+Package pdftex.def Info: images//a_star.png  used on input line 474.
+(pdftex.def)             Requested size: 145.1113pt x 108.83348pt.
+ [13
+
+ <./images//dfs.png> <./images//bfs.png> <./images//ucs.png> <./images//gbfs.png> <./images//a_star.png>] (report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: C4FBC40E852EB73BF2FA5C05E756C89C;1777.
+(rerunfilecheck)             Checksum: BA7831763526DA107415443166F26691;2650.
  ) 
 Here is how much of TeX's memory you used:
- 28330 strings out of 478593
- 507007 string characters out of 2854419
- 896812 words of memory out of 3000000
- 45938 multiletter control sequences out of 15000+600000
- 493418 words of font info for 82 fonts, out of 8000000 for 9000
+ 28397 strings out of 478593
+ 508234 string characters out of 2854419
+ 897812 words of memory out of 3000000
+ 45989 multiletter control sequences out of 15000+600000
+ 494389 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,31n,80p,775b,1832s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnbx12.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnti10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr8.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vntt10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr9.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnsl10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnr10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnbx10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi720\vnbx12.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr12.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi864\vnbx12.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (11 pages, 663331 bytes).
+ 84i,32n,80p,775b,1832s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnbx12.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnti10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr8.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr9.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnsl10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vntt10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnr10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi657\vnbx10.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi720\vnbx12.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi600\vnr12.pk> <C:\Users\duyng\AppData\Local\MiKTeX\fonts/pk/ljfour/vntex/vnr/dpi864\vnbx12.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (13 pages, 881931 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 782 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

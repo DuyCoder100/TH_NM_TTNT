@@ -23,4 +23,10 @@
 \contentsline {section}{\numberline {4}Cài đặt chương trình.}{10}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Ghi chú.}{10}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Định dạng file đầu vào.}{10}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Nhận xét.}{11}{section.5}%
+\contentsline {subsection}{\numberline {4.3}Các lớp và hàm.}{10}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Lớp \lstinline |Point|.}{10}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Lớp \lstinline |Edge|.}{11}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Lớp \lstinline |Graph|.}{11}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Các hàm phụ trợ.}{12}{subsubsection.4.3.4}%
+\contentsline {section}{\numberline {5}Kết quả thu được.}{13}{section.5}%
+\contentsline {section}{\numberline {6}Nhận xét.}{13}{section.6}%

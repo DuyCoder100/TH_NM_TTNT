@@ -259,24 +259,26 @@ Ta chia thành 3 trường hợp như hình 2:
   \caption{Minh hoạ ba trường hợp cần chứng minh}
 \end{figure}
 
-\textbf{Trường hợp 1: Cả hai cạnh $p_{i-1}p_i$ và $p_ip_{i+1}$ đều không là tiếp tuyến của đa giác hay không tiếp xúc với bất cứ đỉnh nào của đa giác}
 
-Dựa vào hình vẽ, tồn tại một vùng nhỏ $U$ quanh $p_i$ sao cho tồn tại một điểm $p_i' \in U$ thoả mãn 
-\begin{center}
-  $d(p_{i-1}, p_i') + d(p_i', p_{i+1}) < d(p_{i-1}, p_i) + d(p_i, p_{i+1})$
-\end{center}
-Suy ra nếu ta thay $p_i$ bởi $p_i'$, ta có thể thu dược một đường đi ngắn hơn, mâu thuẫn với giả sử $\rho$ là đường đi ngắn nhất.
+\begin{itemize}
+  \item \textbf{Trường hợp 1: Cả hai cạnh $p_{i-1}p_i$ và $p_ip_{i+1}$ đều không là tiếp tuyến của đa giác hay không tiếp xúc với bất cứ đỉnh nào của đa giác.}\\
+  Dựa vào hình vẽ, tồn tại một vùng nhỏ $U$ quanh $p_i$ sao cho tồn tại một điểm $p_i' \in U$ thoả mãn 
+  \begin{equation}
+    d(p_{i-1}, p_i') + d(p_i', p_{i+1}) < d(p_{i-1}, p_i) + d(p_i, p_{i+1})
+  \end{equation}
+  Suy ra nếu ta thay $p_i$ bởi $p_i'$, ta có thể thu dược một đường đi ngắn hơn, mâu thuẫn với giả sử $\rho$ là đường đi ngắn nhất.
 
-\textbf{Trường hợp 2: Cả hai cạnh $p_{i-1}p_i$ và $p_ip_{i+1}$ đều nằm trên cạnh của đa giác hay tiếp xúc với bất cứ đỉnh nào của đa giác}
+  \item \textbf{Trường hợp 2: Cả hai cạnh $p_{i-1}p_i$ và $p_ip_{i+1}$ đều nằm trên cạnh của đa giác hay tiếp xúc với bất cứ đỉnh nào của đa giác.}\\
+  Xét 2 đỉnh $p_{i-1}'$ và $p_{i+1}'$ gần nhất sao cho $p_{i - 1}'p_i$ và $p_ip_{i+1}'$ là tiếp tuyến của đa giác. Tương tự \textbf{Trường hợp 1}, ta có thể tìm được một điểm $p_i'$ sao cho
+  \begin{equation}
+    d(p_{i-1}, p_i') + d(p_i', p_{i+1}) < d(p_{i-1}, p_i) + d(p_i, p_{i+1})
+  \end{equation}
+  Điều này mâu thuẫn với giả sử $\rho$ là đường đi ngắn nhất.
 
-Xét 2 đỉnh $p_{i-1}'$ và $p_{i+1}'$ gần nhất sao cho $p_{i - 1}'p_i$ và $p_ip_{i+1}'$ là tiếp tuyến của đa giác. Tương tự \textbf{Trường hợp 1}, ta có thể tìm được một điểm $p_i'$ sao cho
-\begin{center}
-  $d(p_{i-1}, p_i') + d(p_i', p_{i+1}) < d(p_{i-1}, p_i) + d(p_i, p_{i+1})$
-\end{center}
-Điều này mâu thuẫn với giả sử $\rho$ là đường đi ngắn nhất.
-
-\textbf{Trường hợp 3: Trong hai cạnh $p_{i-1}p_i$ và $p_ip_{i+1}$ chỉ có một cạnh là tiếp tuyến của đa giác}
+  \item \textbf{Trường hợp 3: Trong hai cạnh $p_{i-1}p_i$ và $p_ip_{i+1}$ chỉ có một cạnh là tiếp tuyến của đa giác.}
 Trường hợp này là sự kết hợp của hai trường hợp trên, do đó hoàn toàn tương tự, ta cũng thu được điều mâu thuẫn với giả sử.
+\end{itemize}
+
 
 Như vậy, ta đã chứng minh được rằng giả sử $\rho$ là đường đi ngắn nhất là sai. Do đó, ta đã chứng minh được (*) đúng. 
 
@@ -385,7 +387,104 @@ Dữ liệu của file đầu vào gồm (xem hình 5):
   \caption{Định dạng file đầu vào \lstinline|input.txt|.}
 \end{figure}
 
+\subsection{Các lớp và hàm.}
+\subsubsection{Lớp \lstinline|Point|.}
+Lớp \lstinline|Point| dùng để định nghĩa một điểm trong không gian trạng thái của bài toán, gồm một số hàm qaun trọng sau:
+
+\begin{itemize}
+  \item \lstinline|__init__(self, x, y, polygon_id=-1)|: Khởi tạo những thuộc tính của một điểm, bao gồm hoành độ, tung độ và đa giác mà đỉnh đó thuộc về, nếu không nằm trong đa giác nào, \lstinline|polygon_id = -1|. Ngoài ra, hàm còn khởi tạo thêm chi phí ban đầu \lstinline|g = 0| và thuộc tính \lstinline|pre| lưu lại thông tin \lstinline|Point| trước đó trong đường đi tìm kiếm.
+  \item \lstinline|rel(self, other, line)|: Xét vị trí tương đối giữa điểm hiện tại với điểm \lstinline|other| so với đường thẳng \lstinline|line|.
+  \item \lstinline|can_see(self, other, line)|: Kiểm tra xem từ điểm hiện tại có thể nhìn thấy được điểm \lstinline|other| qua đường thẳng \lstinline|line| hay không.
+  \item \lstinline|line_to(self, other)|: Trả về một đối tượng cạnh \lstinline|Edge| (xem mục \textbf{4.3.2}) nối từ điểm hiện tại đến điểm \lstinline|other|.
+  \item \lstinline|heuristic(self, other)|: Trả về kết quả hàm \lstinline|euclid_distance(self, other)| (xem mục \textbf{4.3.4}).
+\end{itemize}
+\subsubsection{Lớp \lstinline|Edge|.}
+Lớp \lstinline|Edge| dùng để định nghĩa một cạnh trong không gian trạng thái của bài toán, trong đó có hai hàm quan trọng sau:
+\begin{itemize}
+  \item \lstinline|__init__(self, point1, point2)|: Khởi tạo những thuộc tính của một cạnh, bao gồm hai đỉnh \lstinline|Point| là \lstinline|point1| và \lstinline|point2|.
+  \item \lstinline|get_adjacent(self, point)|: Trả về đỉnh kề với đỉnh hiện tại (hai đỉnh được gọi là kề nhau nếu chúng nối với nhau bởi một cạnh).
+\end{itemize}
+
+\subsubsection{Lớp \lstinline|Graph|.}
+Lớp \lstinline|Graph| dùng để định nghĩa một đồ thị trong không gian trạng thái của bài toán. Đây cũng là lớp quan trọng nhất của chương trình, trong lớp này chúng ta quan tâm đến các hàm sau:
+
+\begin{itemize}
+  \item \lstinline|__init__(self, polygons)|: Khởi tạo đồ thị \lstinline|self.graph| của bài toán, trong đó \lstinline|polygons| là một danh sách các đa giác, mỗi đa giác là một danh sách các điểm \lstinline|Point| được đọc vào từ file \lstinline|input.txt|. Ngoài ra, hàm này còn lưu tập hợp các cạnh \lstinline|self.edges| và các đa giác \lstinline|self.polygons| của đồ thị.
+  \item \lstinline|add_point(self, point)|: Thêm đỉnh \lstinline|point| vào đồ thị.
+  \item \lstinline|add_edge(self, edge)|: Thêm cạnh \lstinline|edge| vào đồ thị.
+  \item \lstinline|get_points(self)|: Trả về danh sách của đồ thị.
+  \item \lstinline|get_edges(self)|: Trả về tập hợp các cạnh của đồ thị.
+  \item \lstinline|get_polygons(self)|: Trả về tập hợp các đa giác của đồ thị.
+  \item \lstinline|get_adjacent_points(self, point)|: Trả về danh sách các đỉnh kề với đỉnh \lstinline|point|.
+  \item \lstinline|can_see(self, start)|: Trả về danh sách các điểm \textit{nhìn thấy} được từ đỉnh \lstinline|start|.
+  \item \lstinline|can_go(self, start)|: Trả về tập hợp các điểm có thể di chuyển đến từ đỉnh \lstinline|start|.
+  \item \lstinline|h(self, point)|: Trả về giá trị hàm heuristic nếu cần sử dụng, ngược lại trả về $-1$.
+\end{itemize}
+
+\subsubsection{Các hàm phụ trợ.}
+Ngoài các lớp ở trên, để giải quyết bài toán, chúng ta còn cần các hàm sau:
+\begin{itemize}
+  \item \lstinline|euclid_distance(point1, point2)|: Trả về khoảng cách Euclide giữa hai điểm \lstinline|point1| và \lstinline|point2|. Khoảng cách Euclide giữa hai điểm $A(x_A, y_A)$ và $B(x_B, y_B)$ được tính bằng công thức:
+  \begin{equation}
+    d_{AB} = \sqrt{(x_A - x_B)^2 + (y_A - y_B)^2}\nonumber
+  \end{equation}
+  \item \lstinline|bfs(graph, start, goal)|: Trả về đường đi ngắn nhất từ điểm bắt đầu \lstinline|start| đến điểm kêt thúc \lstinline|goal| trong đồ thị \lstinline|graph| bằng thuật toán BFS.
+  \item \lstinline|dfs(graph, start, goal)|: Trả về đường đi ngắn nhất từ điểm bắt đầu \lstinline|start| đến điểm kêt thúc \lstinline|goal| trong đồ thị \lstinline|graph| bằng thuật toán DFS.
+  \item \lstinline|ucs(graph, start, goal)|: Trả về đường đi ngắn nhất từ điểm bắt đầu \lstinline|start| đến điểm kêt thúc \lstinline|goal| trong đồ thị \lstinline|graph| bằng thuật toán UCS.
+  \item \lstinline|search(graph, start, goal, func)|: Trả về đường đi ngắn nhất từ điểm bắt đầu \lstinline|start| đến điểm kêt thúc \lstinline|goal| trong đồ thị \lstinline|graph|, trong đó \lstinline|func| là một trong hai hàm lambda sau:
+  \begin{itemize}
+    \item \lstinline|greedy = lambda graph, i: graph.h(i)|: Ứng với thuật toán GBFS.
+    \item \lstinline|a_star = lambda graph, i: i.g + graph.h(i)|: Ứng với thuật toán A*.
+  \end{itemize}
+\end{itemize}
+
 \clearpage
+\section{Kết quả thu được.}
+Lời giải cho bài toán ban đầu được thể hiện trong hình 6.
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{.3\linewidth}
+      \centering
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{dfs.png}
+      \caption{Thuật toán DFS}
+  \end{subfigure}
+      \hfill
+  \begin{subfigure}{.3\linewidth}
+      \centering
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{bfs.png}
+      \caption{Thuật toán BFS}
+  \end{subfigure}
+     \hfill
+  \begin{subfigure}{.3\linewidth}
+      \centering
+      \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ucs.png}
+      \caption{Thuật toán UCS}
+  \end{subfigure}
+  
+  \bigskip
+  \begin{subfigure}{.3\linewidth}
+    \centering
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{gbfs.png}
+    \caption{Thuật toán GBFS}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{.3\linewidth}
+    \centering
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{a_star.png}
+    \caption{Thuật toán A*}
+  \end{subfigure}
+  \caption{Lời giải bài toán ban đầu}
+\end{figure}
+
 \section{Nhận xét.}
+- Dễ dàng nhận thấy thuật toán A* cho đường đi tốt nhất trong 5 thuật toán tìm kiếm, lý do là bởi thuật toán A* cân bằng giữa chi phí di chuyển và hàm heuristic để tạo ra một đường đi tối ưu nhất có thể.
+
+- Thuật toán UCS cho đường đi không tốt hơn thuật toán BFS và thuật toán DFS. Ta có thề thấy đường đi của thuật toán UCS dài hơn đường đi của thuật toán BFS và thuật toán DFS.
+
+- Thuật toán GBFS cho đường đi tốt hơn thuật toán UCS. Ta có thề thấy đường đi của thuật toán GBFS ngắn hơn nhiều đường đi của thuật toán BFS và thuật toán DFS.
+
+- Mặc dù vậy, cả 5 thuật toán trên vẫn chưa đảm bảo được đường đi tối ưu nhất có thể. Trên thực tế, người ta thường sử dụng một số thuật toán khác để giải quyết bài toán tìm đường đi vượt qua chướng ngại này như là RRT, APF,...
+
 
 \end{document}

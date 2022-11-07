@@ -140,13 +140,6 @@ class Graph:
                 if edge in polygons[start.polygon_id]:
                     can_go.add(point)
         return can_go     
-    
-    def get_polygon_points(self, index):
-        point_set = set()
-        for edge in self.polygons[index]:
-            point_set.add(edge.p1)
-            point_set.add(edge.p2)
-        return point_set
 
     def get_points(self):
         return list(self.graph)
@@ -156,6 +149,13 @@ class Graph:
 
     def get_polygons(self):
         return self.polygons
+
+    def get_polygon_points(self, index):
+        point_set = set()
+        for edge in self.polygons[index]:
+            point_set.add(edge.p1)
+            point_set.add(edge.p2)
+        return point_set
     
     def add_point(self, point):
         self.graph[point].add(point)
@@ -311,7 +311,7 @@ def main():
         graph.add_point(start)
         graph.heuristic = {point: point.heuristic(goal) for point in graph.get_points()}
 
-        path = dfs(graph, start, goal)
+        path = search(graph, start, goal, a_star)
         result = list()
 
         while path:
