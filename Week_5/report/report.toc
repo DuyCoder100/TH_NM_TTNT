@@ -1,0 +1,12 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {1}Bài toán người đi du lịch - Travelling salesman problem (TSP).}{2}{section.1}%
+\contentsline {section}{\numberline {2}Cây khung nhỏ nhất (MST) - Thuật toán Prim.}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Cây khung nhỏ nhất (MST).}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Thuật toán Prim.}{3}{subsection.2.2}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {3}Giải thuật heuristic Chèn gấn nhất - Nearest Insertion.}{6}{section.3}%
+\babel@toc {vietnamese}{}\relax 
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {4}Kết quả trên \lstinline |Python|.}{8}{section.4}%
+\contentsline {section}{\numberline {5}Nhận xét.}{8}{section.5}%
